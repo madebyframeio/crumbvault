@@ -1,7 +1,24 @@
 @import "tailwindcss";
 
+
+@font-face {
+  font-family: "OutfitLocal";
+  src: url("../../public/fonts/Outfit-VariableFont_wght.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-feature-settings: "ss01" 1;
+}
+
+
 body {
-  font-family: var(--font-outfit), ui-sans-serif, system-ui;
+  font-family: 'OutfitLocal', ui-sans-serif, system-ui;
+  font-variant-alternates: stylistic(ss01);
+}
+
+h1 {
+  font-weight: 500;
+  font-family: 'OutfitLocal', ui-sans-serif, system-ui;
+  font-variant-alternates: stylistic(ss01);
 }
 
 
