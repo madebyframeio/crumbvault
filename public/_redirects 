@@ -1,0 +1,5 @@
+# 1️⃣ Force all HTTP traffic to HTTPS
+http://* https://:splat 301!
+
+# 2️⃣ Redirect www to non-www (optional but recommended)
+https://www.crumbvault.xyz/* https://crumbvault.xyz/:splat 301!
