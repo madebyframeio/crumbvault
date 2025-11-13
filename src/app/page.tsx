@@ -41,31 +41,31 @@ const Home = () => {
             <Image src={logo} alt='Crumbvault logo' className='w-44 h-7' />
           </div>
           <div className='lg:px-12 md:px-20 mt-12'>
-            <h1 className='font-medium text-5xl md:text-7xl lg:px-52 mb-4 bg-linear-to-r from-[#2C2416] via-[#8664FF] to-[#2C2416] bg-clip-text text-transparent'>The Smarter Way To Handle Cookie Banners</h1>
+            <h1 className='font-medium text-5xl md:text-6xl lg:text-7xl lg:px-52 mb-4 bg-linear-to-r from-[#2C2416] via-[#8664FF] to-[#2C2416] bg-clip-text text-transparent'>The Smarter Way To Handle Cookie Banners</h1>
             <p className='text-[#929292] mb-8 lg:px-48'>
               CrumbVault enables quick, privacy friendly cookie banners and lets users manage cookie preferences securely.
             </p>
           </div>
-          <div className='w-full lg:px-36 md:px-38 mb-6'>
-            <form onSubmit={handleSubmit} className='flex flex-col md:flex-row gap-4 w-full lg:px-42 mb-4'>
-              <div className='relative md:w-2/3'>
+          <div className='w-full lg:px-36 md:px-36 mb-6'>
+            <form onSubmit={handleSubmit} className='flex flex-col lg:flex-row gap-4 w-full lg:px-42 mb-4'>
+              <div className='relative lg:w-2/3'>
                 <Image src={mail} alt='mail icon' className='absolute left-2.5 top-1/2 -translate-y-1/2 text-[#000000] font-black w-5 h-4' />
-                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name='email' placeholder='e.g dominic@mail.com' className='py-3 pl-8 rounded-xl shadow-2xl w-full border-t border-t-[#F0F2F4]' />
+                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name='email' placeholder='e.g dominic@mail.com' className='py-3 pl-10 rounded-xl shadow-2xl w-full border-t border-t-[#F0F2F4]' />
                 <ValidationError prefix="Email" field="email" errors={state.errors} />
               </div>
-              <button type="submit" disabled={state.submitting} className='hover:bg-[#9a7ffa] flex items-center justify-center text-center cursor-pointer md:w-35 p-3 bg-[#8664FF] text-white rounded-2xl'>
+              <button type="submit" disabled={state.submitting} className='hover:bg-[#9a7ffa] flex items-center justify-center text-center cursor-pointer lg:w-35 p-3 bg-[#8664FF] text-white rounded-2xl'>
                 Get Started 
-                <svg className='text-white w-6 h-6' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+                <svg className='text-white w-5 h-5' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
               </button>
             </form>
             {state.succeeded && <TemporaryMessage />}
             <p>Join <span className='text-[#8664FF]'>30+</span> early adopters waiting for launch</p>
           </div>
-          <div className='mt-6 flex gap-1 md:gap-0 bg-linear-to-r from-[#8664FF0D] to-[#F5C96C0D] py-2 px-4 text-left border border-[#D9B48F33] rounded-2xl lg:mx-80 md:mx-42'>
-            <div className='w-1/3 '>
+          <div className='mt-6 flex gap-1 md:gap-0 bg-linear-to-r from-[#8664FF0D] to-[#F5C96C0D] py-2 px-4 text-left border border-[#D9B48F33] rounded-2xl lg:mx-80 md:mx-36'>
+            <div className='w-1/3 lg:w-1/3 md:w-'>
               <p className='font-medium'>Love Cookies?</p>
             </div>
-            <div className='w-2/3 md:w-3/4'>
+            <div className='w-2/3 lg:w-3/4'>
               <p className='text-[#929292] text-[15px]'>Share CrumbVault with friends and get early access perks!</p>
             </div>
           </div>
